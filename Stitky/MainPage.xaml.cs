@@ -2,23 +2,27 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
+        Single VyrCislo;
         public MainPage()
         {
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object? sender, EventArgs e)
+        public void OnKlik(object? sender, EventArgs e)
         {
-            count++;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+            int VyrCislo;
+
+            if (int.TryParse(Cislo.Text, out VyrCislo))
+            {
+                NacteneCislo.Text = "Načtené trafo číslo: " + VyrCislo;
+            }
             else
-                CounterBtn.Text = $"Clicked {count} times";
+            {
+                NacteneCislo.Text = "Zadej platné číslo!";
+            }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+
         }
     }
 }
