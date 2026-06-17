@@ -2,13 +2,13 @@
 {
     public partial class MainPage : ContentPage
     {
-        // nepotřebuju int VyrCislo;
+        
         public MainPage()
         {
             InitializeComponent();
         }
 
-        // Metoda Nacist je součástí tlačítka Načíst trafo. Načte trafo s požadovaným číslem z nastavené složky
+        // Metoda Nacist je akcí tlačítka Načíst trafo. Načte trafo s požadovaným číslem z nastavené složky
         public void Nacist(object sender, EventArgs e)
         {
             
