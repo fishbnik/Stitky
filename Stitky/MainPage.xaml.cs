@@ -2,27 +2,27 @@
 {
     public partial class MainPage : ContentPage
     {
-        Single VyrCislo;
+        // nepotřebuju int VyrCislo;
         public MainPage()
         {
             InitializeComponent();
         }
 
-        public void OnKlik(object? sender, EventArgs e)
+        // Metoda Nacist je součástí tlačítka Načíst trafo
+        public void Nacist(object sender, EventArgs e)
         {
-
-            int VyrCislo;
-
-            if (int.TryParse(Cislo.Text, out VyrCislo))
-            {
-                NacteneCislo.Text = "Načtené trafo číslo: " + VyrCislo;
-            }
-            else
+            
+            if (!int.TryParse(Cislo.Text, out int cislo))
             {
                 NacteneCislo.Text = "Zadej platné číslo!";
             }
-
-
+            else
+            {
+                Trafo noveTrafo = new Trafo(cislo);
+                NacteneCislo.Text = "Načtené trafo číslo: " + noveTrafo.VyrCislo;
+            }
         }
+
+        
     }
 }

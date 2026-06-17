@@ -17,7 +17,7 @@
 
             <Entry x:Name="Cislo" Placeholder="Výrobní číslo" />
 
-            <Button Text="Načíst" Clicked="OnKlik" />
+            <Button Text="Načíst trafo" Clicked="Nacist" Pressed="Nacist" />
 
             <Label x:Name="NacteneCislo" />
 
