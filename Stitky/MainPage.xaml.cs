@@ -8,7 +8,7 @@
             InitializeComponent();
         }
 
-        // Metoda Nacist je součástí tlačítka Načíst trafo
+        // Metoda Nacist je součástí tlačítka Načíst trafo. Načte trafo s požadovaným číslem z nastavené složky
         public void Nacist(object sender, EventArgs e)
         {
             
@@ -19,7 +19,7 @@
             else
             {
                 Trafo noveTrafo = new Trafo(cislo);
-                NacteneCislo.Text = "Načtené trafo číslo: " + noveTrafo.VyrCislo;
+                NacteneCislo.Text = "Načteno trafo číslo: " + noveTrafo.VyrCislo;
             }
         }
 

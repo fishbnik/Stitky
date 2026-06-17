@@ -7,8 +7,15 @@
     Title="Štítky">
 
     <ShellContent
-        Title="Štítky"
+        Title="Načíst údaje o trafu"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+
+    <!-- nastavení -->
+    <ShellContent Title="Nastavení" ContentTemplate="{DataTemplate local:SettingsPage}" />
+
+    <!-- info -->
+    <ShellContent Title="Info" ContentTemplate="{DataTemplate local:InfoPage}" />
 
 </Shell>

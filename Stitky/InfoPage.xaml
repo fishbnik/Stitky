@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stitky.InfoPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="30" Spacing="20">
+
+            <Label 
+                Text="Informace o aplikaci"
+                FontSize="24"
+                HorizontalOptions="Center"
+                FontAttributes="Bold" />
+
+            <Label 
+                Text="Tato aplikace slouží k načítání údajů o transformátorech ze zkušebních protokolů."
+                FontSize="16" />
+
+            <Label 
+                Text="Verze: 1.0"
+                FontSize="14" />
+
+            <Label 
+                Text="Autor: Lukáš Rybenský"
+                FontSize="14" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
