@@ -1,12 +1,12 @@
 ﻿
-namespace Stitky;
-
-public partial class SettingsPage : ContentPage
+namespace Stitky
 {
-    public SettingsPage()
+    public partial class SettingsPage : ContentPage
     {
-        InitializeComponent();
-    }
+        public SettingsPage()
+        {
+            InitializeComponent();
+        }
 
     private void VyberSlozkyProtokolu(object sender, EventArgs e)
     {
@@ -14,3 +14,4 @@ public partial class SettingsPage : ContentPage
     }
 }
 
+}

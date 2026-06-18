@@ -20,12 +20,12 @@
 
             <!-- Textové pole -->
             <Label Text="Složka s protokoly:" />
-            <Entry x:Name="ExcelPath" Placeholder="Vyber složku protokolů..." />
+            <Entry x:Name="SlozkaProtokolu" Placeholder="Vyber složku protokolů..." />
 
             <!-- Tlačítko Vyber složku protokolů -->
             <Button Text="Vyber složku protokolů" Clicked="VyberSlozkyProtokolu" />
 
-            <!-- Výstup -->
+            <!-- Asi nebude potřeba Výstup -->
             <Label x:Name="StatusLabel" TextColor="Green" />
 
         </VerticalStackLayout>
