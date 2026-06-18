@@ -7,9 +7,11 @@ namespace Stitky
     internal class Trafo
     {
         public int VyrCislo { get; set; }
+        
         public Trafo(int vyrCislo)
         {
             VyrCislo = vyrCislo;
+
                 
         }
     }

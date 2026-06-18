@@ -6,6 +6,11 @@
         public MainPage()
         {
             InitializeComponent();
+
+            //Načtení nastavení složky protokolů při spuštění aplikace
+            string slozkaProtokolu =
+                Preferences.Get("SlozkaProtokolu", "");
+
         }
 
         // Metoda Nacist je akcí tlačítka Načíst trafo. Načte trafo s požadovaným číslem z nastavené složky
