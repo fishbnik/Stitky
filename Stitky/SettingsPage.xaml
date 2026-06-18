@@ -19,13 +19,13 @@
             </HorizontalStackLayout>
 
             <!-- Textové pole -->
-            <Label Text="Cesta k Excel souboru:" />
-            <Entry x:Name="ExcelPath" Placeholder="Zadej cestu..." />
+            <Label Text="Složka s protokoly:" />
+            <Entry x:Name="SlozkaProtokolu" Placeholder="Vyber složku protokolů..." />
 
-            <!-- Tlačítko -->
-            <Button Text="Uložit nastavení" Clicked="OnSaveClicked" />
+            <!-- Tlačítko Vyber složku protokolů -->
+            <Button Text="Vyber složku protokolů" Clicked="VyberSlozkyProtokolu" />
 
-            <!-- Výstup -->
+            <!-- Asi nebude potřeba Výstup -->
             <Label x:Name="StatusLabel" TextColor="Green" />
 
         </VerticalStackLayout>

@@ -13,11 +13,11 @@
                 SemanticProperties.HeadingLevel="Level1" />
 
 
-            
 
-            <Entry x:Name="Cislo" Placeholder="Výrobní číslo" />
 
-            <Button Text="Načíst trafo" Clicked="Nacist" Pressed="Nacist" />
+            <Entry x:Name="Cislo" Placeholder="Výrobní číslo"  Completed="Nacist" />
+
+            <Button Text="Načíst trafo" Clicked="Nacist" />
 
             <Label x:Name="NacteneCislo" />
 
