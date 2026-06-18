@@ -8,7 +8,7 @@ public partial class SettingsPage : ContentPage
         InitializeComponent();
     }
 
-    private void OnSaveClicked(object sender, EventArgs e)
+    private void VyberSlozkyProtokolued(object sender, EventArgs e)
     {
         
     }
